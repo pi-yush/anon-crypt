@@ -10,19 +10,18 @@ The repository contains code to analyze the anonymity of different network-level
 
 ### Dandelion++
 * This folder contains code for the same analysis as Dandelion i.e., varying pf, N and C. Along with that it contains code to:
-    * Analyze anonymity when privacy subgraph is modified to be the bitcoin graph.
-    * Construct privacy subgraphs by performing a graph learning attack. 
+    * Analyze anonymity when privacy subgraph is modified to be the bitcoin graph. 
 
 ### LN (Lightning Network)
-* This folder contains code to:
+* This folder contains code to perform analysis for:
+    * An older 2018 LN topology snapshot
+    * The most recent 2021 LN snapshot
+    * Longitudinal analysis of topologies from 2019 and 2020
+    * Random graph topologies with balanced centrality are used instead of the existing centralized real LN topologies.
+* All the folders consists of two code files:
     * Construct a directed graph with corresponding nodes and edge weights from a real LN snapshot (consisting of channel announcement and policy updates).
-    * Perform anonymity analysis when:
-        * We select nodes as asversaries with varying:
-            * Node degree
-            * Centrality
-        * Best K paths are considered for routing payment instead of a single best path.
-        * The adversary is budget constrained and wants to select colluding nodes while maximizing deanonymization.
-        * Random graph topologies with balanced centrality are used instead of the existing centralized real LN topologies.
+    * Perform anonymity analysis when we select nodes as asversaries with varying node degree
+There is also a seperate file for analysis when the best K paths are considered for routing payment instead of a single best path.        
 
 ## Setup Details
 * Dependencies can be installed using requirements.txt file.
