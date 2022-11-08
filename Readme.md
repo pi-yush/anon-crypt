@@ -21,7 +21,8 @@ The repository contains code to analyze the anonymity of different network-level
 * All the folders consists of two code files:
     * Construct a directed graph with corresponding nodes and edge weights from a real LN snapshot (consisting of channel announcement and policy updates).
     * Perform anonymity analysis when we select nodes as asversaries with varying node degree
-There is also a seperate file for analysis when the best K paths are considered for routing payment instead of a single best path.        
+* There is also a seperate file for analysis when the best K paths are considered for routing payment instead of a single best path.       
+* The documentation about working of the code has been done for the 2018 topo files (other folders also have similar codes with minor differences).
 
 ## Setup Details
 * Dependencies can be installed using requirements.txt file.
