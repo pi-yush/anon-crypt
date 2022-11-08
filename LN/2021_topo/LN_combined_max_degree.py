@@ -14,7 +14,7 @@ import time
 import os
 import sys
 
-from LN_snap_to_digraph_converter_tx_value_cltv import build_graph_from_snapshot
+from LN_snap_to_digraph_converter_tx_value import build_graph_from_snapshot
 
 data_dir = 'LN_results/'
 files_dir = 'data_files/'
