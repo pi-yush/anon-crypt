@@ -15,7 +15,7 @@ The repository contains code to analyze the anonymity of different network-level
 ### LN (Lightning Network)
 * This folder contains code to perform analysis for:
     * An older 2018 LN topology snapshot
-    * The most recent 2021 LN snapshot
+    * The most recent 2021 LN snapshot + analysis based on varying transaction amount
     * Longitudinal analysis of topologies from 2019 and 2020
     * Random graph topologies with balanced centrality are used instead of the existing centralized real LN topologies.
 * All the folders consists of three code files:
@@ -29,4 +29,4 @@ The repository contains code to analyze the anonymity of different network-level
 * Dependencies can be installed using requirements.txt file.
 * The codes are tested to work for Python 3.6 or higher.
 * The codes for Dandelion and Dandelion++ are self sufficient. However, to run the codes for LN, data from real LN network snapshots is required, which is provided in the form of JSON files (see releases).
-* LN code outputs data in different directories. This data can  be used to perform analysis of plot data (using the plotting scripts provided in each folder)
+* LN code outputs data in different directories. This data can be used for plotting (using the plotting scripts provided in each folder) or to perform additional analysis.
