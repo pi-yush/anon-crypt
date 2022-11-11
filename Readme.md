@@ -30,3 +30,4 @@ The repository contains code to analyze the anonymity of different network-level
 * The codes are tested to work for Python 3.6 or higher.
 * The codes for Dandelion and Dandelion++ are self sufficient. However, to run the codes for LN, data from real LN network snapshots is required, which is provided in the form of JSON files (see releases).
 * LN code outputs data in different directories. This data can be used for plotting (using the plotting scripts provided in each folder) or to perform additional analysis.
+* For LN, it would be great if the machine has multiple cores (20 or more). The code is already very parallelized to exploit the machine capabilities to the maximum. For normal laptop machines, running the simulator for larger topologies can be very time consuming. IN such a case it would be a good idea to start with the smaller 2018 topology. 
