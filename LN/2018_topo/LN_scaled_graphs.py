@@ -6,7 +6,7 @@ import datetime
 
 base_dir = './LN/LN_results/'
 #individual_dir = ['top_degree_12/', 'top_degree_30/', 'top_degree_60/', 'top_degree_120/']
-individual_dir = ['top_degree_60_cltv/', 'best_k_5__top_60/']
+individual_dir = ['top_degree_60/', 'best_k_5__top_60/']
 entropy_dir = 'graphs/'
 data_dir = 'data_files/nodes_affected_per_sample/'
 
@@ -44,10 +44,6 @@ for idir in individual_dir:
 labels, data = [*zip(*entropy_data.items())] 
 #labels = ['1', '2.5', '5', '10']
 labels = ['k=1', 'k=5']
-
-#labels = ['5', '10', '15', '20']
-#labels = ['low-middle', 'middle-high', 'high', 'top-1']
-#labels = ['1-5']
 
 colors = []
 for i in range(0,len(individual_dir)):
